@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 0.5px solid rgb(200, 200, 200);
+}
+
+.logo {
+    color: #16507b;
+    width: 20%;
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 80%;
+    text-align: right;
+    display: inline-block;
+}
+
+.menu a {
+    color: #124265;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.s;
+    text-align: center;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+.menu .btn-menu {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 6px 12px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.menu .btn-menu:hover {
+    background-color: #1a4461;
+    color: white;
+}
+
+/* Section Main */
+
+section.main {
+    background-image: url(assets/background-section.jpg);
+    padding: 85px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_cta {
+    width: 100%;
+    text-align: center;
+}
+
+.main_cta h2 {
+    color: #16507b;
+    font-size: 40px;
+}
+
+.main_cta p {
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.diferenciais {
+    display: flex;
+    padding-top: 80px;
+    flex-wrap: wrap;
+}
+
+.diferencial-single {
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+
+.diferencial-single i {
+    color: #007bff;
+}
+
+.diferencial-single h2 {
+    color: #124265;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+section.sobre {
+    padding: 80px 0;
+}
+
+.chamada-sobre {
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2 {
+    color: #124265;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p {
+    margin: 0 20px;
+    color: #444444;
+}
+
+.conteudo-sobre span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.conteudo-sobre i {
+    color: #124265;
+}
+
+section.conquistas {
+    background-color: #f8fbfe;
+    padding: 8px 0;
+}
+
+.conquista-single {
+    width: 22%;
+    margin-right: 3%;
+    color: #124265;
+    text-align: center;
+}
+
+.conquista-single h2 {
+    color: #124265;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .diferencial-single {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .conteudo-sobre {
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        width: 10%;
+    }
+    .menu-mobile {
+        width: 90%;
+        display: block;
+        text-align: right;
+    }
+    .menu-mobile i {
+        cursor: pointer;
+        font-size: 22px;
+    }
+}
